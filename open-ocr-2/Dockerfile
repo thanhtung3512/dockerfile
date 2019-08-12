@@ -24,6 +24,8 @@ RUN apt-get install -y \
 
 # Get language data.
 RUN apt-get install -y \
+  tesseract-ocr-fin \
+  tesseract-ocr-vie \
   tesseract-ocr-eng
 
 RUN mkdir -p $GOPATH
